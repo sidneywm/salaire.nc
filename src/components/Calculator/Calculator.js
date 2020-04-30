@@ -178,7 +178,7 @@ const Calculator = () => {
         <TableSummary values={values}></TableSummary>
       </Grid>
       <Grid item xs={12}>
-        <Alert severity="info" className={classes.alert} variant="outlined">
+        <Alert severity="info" className={classes.alert}>
           Ces montants sont donnés à titre indicatif. <b>Salaire.nc</b> ne peut
           être tenu responsable d'éventuelles erreurs de calcul.
         </Alert>
