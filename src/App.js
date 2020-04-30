@@ -1,24 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import Container from '@material-ui/core/Container';
+
+import Topbar from './components/Topbar/Topbar';
+import Header from './components/Header/Header';
+import Calculator from './components/Calculator/Calculator';
+import Copyright from './components/Copyright/Copyright';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Topbar></Topbar>
+      <Container maxWidth="md">
+        <Header></Header>
+        <Calculator></Calculator>
+        <Copyright></Copyright>
+      </Container>
     </div>
   );
 }
