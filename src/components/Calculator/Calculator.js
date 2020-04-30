@@ -48,6 +48,18 @@ const useStyles = makeStyles((theme) => ({
 const Calculator = () => {
   const classes = useStyles();
 
+  React.useEffect(() => {
+    const listener = (event) => {
+      if (event.code === 'Enter' || event.code === 'NumpadEnter') {
+        calculate();
+      }
+    };
+    document.addEventListener('keydown', listener);
+    return () => {
+      document.removeEventListener('keydown', listener);
+    };
+  });
+
   const [values, setValues] = React.useState({
     salaryBrut: null,
     salaryNet: 0,
