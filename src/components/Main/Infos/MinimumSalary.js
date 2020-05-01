@@ -10,10 +10,14 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     flexDirection: 'column',
   },
+  icon: {
+    width: '3.2rem',
+  },
   title: {
     fontSize: '1.6rem',
     fontWeight: 300,
     textAlign: 'center',
+    marginTop: theme.spacing(2),
   },
   text: {
     textAlign: 'center',
@@ -32,6 +36,11 @@ const MinimumSalary = () => {
 
   return (
     <div className={classes.root}>
+      <img
+        className={classes.icon}
+        src="/images/line.svg"
+        alt="Salaire minimum en Nouvelle-Calédonie"
+      ></img>
       <Typography variant="h3" className={classes.title}>
         Salaire minimum
       </Typography>
