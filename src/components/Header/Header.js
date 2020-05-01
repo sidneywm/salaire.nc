@@ -19,7 +19,7 @@ const Header = () => {
     <Grid container spacing={3} className={classes.root}>
       <Grid item xs={12}>
         <Typography variant="h2" className={classes.title}>
-          Calculer son <b>salaire brut/net</b> en Nouvelle-Calédonie.
+          Calculez votre <b>salaire brut/net</b> en Nouvelle-Calédonie.
         </Typography>
       </Grid>
     </Grid>
