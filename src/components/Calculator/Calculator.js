@@ -157,7 +157,7 @@ const Calculator = () => {
         <div className={classes.inputBox}>
           <TextField
             label="Salaire brut mensuel* (FCFP)"
-            helperText="*Hors avantages en nature et tickets restaurants"
+            helperText="*Hors avantages en nature et tickets restaurant"
             className={classes.inputField}
             value={values.salaryBrut}
             onChange={handleChange}
@@ -177,7 +177,7 @@ const Calculator = () => {
           </Button>
           <img
             className={classes.inputImg}
-            src="worker.svg"
+            src="/images/worker.svg"
             alt="Employé"
           ></img>
         </div>
