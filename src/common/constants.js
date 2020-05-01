@@ -12,6 +12,9 @@ export const rates = {
     tranche1: formatRate(3.15),
     tranche2: formatRate(8.64),
   },
-  ceg: formatRate(0.75),
+  ceg: {
+    tranche1: formatRate(0.75),
+    tranche2: formatRate(0.46),
+  },
   cet: formatRate(0.14),
 };

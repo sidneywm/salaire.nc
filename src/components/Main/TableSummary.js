@@ -60,7 +60,20 @@ const TableSummary = (props) => {
           ),
         ]
       : []),
-    createData("CEG (Contribution d'équilibre général)", rates.ceg, ceg),
+    createData(
+      "CEG (Contribution d'équilibre général) Tranche 1",
+      rates.ceg.tranche1,
+      ceg.tranche1
+    ),
+    ...(ceg.tranche2
+      ? [
+          createData(
+            "CEG (Contribution d'équilibre général) Tranche 2",
+            rates.ceg.tranche2,
+            ceg.tranche2
+          ),
+        ]
+      : []),
   ];
 
   return (
@@ -79,7 +92,9 @@ const TableSummary = (props) => {
               <TableCell component="th" scope="row">
                 {row.nom}
               </TableCell>
-              <TableCell align="center">{row.taux * 100}</TableCell>
+              <TableCell align="center">
+                {(row.taux * 100).toFixed(2)}
+              </TableCell>
               <TableCell align="center">{formatNumbers(row.montant)}</TableCell>
             </TableRow>
           ))}

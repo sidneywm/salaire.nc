@@ -71,7 +71,10 @@ const Main = () => {
       tranche1: 0,
       tranche2: null,
     },
-    ceg: 0,
+    ceg: {
+      tranche1: 0,
+      tranche2: null,
+    },
     cet: 0,
   });
 
@@ -132,9 +135,19 @@ const Main = () => {
                 )
               : null,
         },
-        ceg: roundNumber(
-          (salaryBrut > 409069 ? 409069 : salaryBrut) * rates.ceg
-        ),
+        ceg: {
+          tranche1: roundNumber(
+            (salaryBrut > 409069 ? 409069 : salaryBrut) * rates.ceg.tranche1
+          ),
+          tranche2:
+            salaryBrut >= 409070
+              ? roundNumber(
+                  (salaryBrut > 3272554
+                    ? 3272554 - 409070
+                    : salaryBrut - 409070) * rates.ceg.tranche2
+                )
+              : null,
+        },
         cet: 0,
       };
       setValues({
@@ -149,7 +162,8 @@ const Main = () => {
           output.ccs -
           output.retraiteAgircArrco.tranche1 -
           output.retraiteAgircArrco.tranche2 -
-          output.ceg,
+          output.ceg.tranche1 -
+          output.ceg.tranche2,
       });
     }
   };
