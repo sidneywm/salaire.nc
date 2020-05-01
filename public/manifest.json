@@ -1,6 +1,6 @@
 {
   "short_name": "Salaire.nc",
-  "name": "Salaire.nc",
+  "name": "Salaire.nc - Calculatrice salaire brut/net calédonien",
   "icons": [
     {
       "src": "/favicons/favicon.ico",
@@ -8,7 +8,7 @@
       "type": "image/x-icon"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
   "theme_color": "#004b3c",
   "background_color": "#ffffff"
