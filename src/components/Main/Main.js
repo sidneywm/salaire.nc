@@ -15,6 +15,7 @@ import SalaryBrutInput from './SalaryBrutInput';
 import SalaryNetResult from './SalaryNetResult';
 import TableSummary from './TableSummary';
 import MinimumSalary from './MinimumSalary';
+import AverageSalary from './AverageSalary';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -209,6 +210,10 @@ const Main = () => {
       <hr />
       <Grid item xs={12}>
         <MinimumSalary></MinimumSalary>
+      </Grid>
+      <hr />
+      <Grid item xs={12}>
+        <AverageSalary></AverageSalary>
       </Grid>
     </Grid>
   );

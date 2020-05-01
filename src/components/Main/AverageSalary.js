@@ -27,23 +27,23 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const MinimumSalary = () => {
+const AverageSalary = () => {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
       <Typography variant="h3" className={classes.title}>
-        Salaire minimum
+        Salaire moyen
       </Typography>
       <Typography variant="body1" className={classes.text}>
-        À compter du 1er octobre 2018, le salaire minimun brut garanti par mois
-        en Nouvelle-Calédonie est de :
+        Selon ISEE en 2013, un salarié à temps plein gagne un salaire mensuel
+        moyen net de :
       </Typography>
       <Typography variant="body1" className={classes.number}>
-        156 568 FCFP
+        274 000 FCFP
       </Typography>
     </div>
   );
 };
 
-export default MinimumSalary;
+export default AverageSalary;
