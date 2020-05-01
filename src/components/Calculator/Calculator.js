@@ -190,8 +190,19 @@ const Calculator = () => {
       </Grid>
       <Grid item xs={12}>
         <Alert severity="info" variant="outlined" className={classes.alert}>
-          Ces montants sont donnés à titre indicatif. <b>Salaire.nc</b> ne peut
-          être tenu responsable d'éventuelles erreurs de calcul.
+          Ces montants sont donnés à titre indicatif. Ces taux sont susceptibles
+          de changer à tout moment. Pour consulter les derniers taux en vigueur,
+          veuillez consulter le site officiel de la Sécurité sociale en
+          Nouvelle-Calédonie (
+          <a
+            href="https://www.cafat.nc/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            https://www.cafat.nc/
+          </a>
+          ). <b>Salaire.nc</b> ne peut être tenu responsable d'éventuelles
+          erreurs de calcul.
         </Alert>
       </Grid>
     </Grid>
