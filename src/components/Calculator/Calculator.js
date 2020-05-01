@@ -38,6 +38,12 @@ const useStyles = makeStyles((theme) => ({
       )}px`,
     },
   },
+  inputImg: {
+    marginLeft: theme.spacing(14),
+    [theme.breakpoints.down('sm')]: {
+      display: 'none',
+    },
+  },
   alert: {
     justifyContent: 'center',
     width: 'fit-content',
@@ -169,6 +175,11 @@ const Calculator = () => {
           >
             Calculer
           </Button>
+          <img
+            className={classes.inputImg}
+            src="worker.svg"
+            alt="Employé"
+          ></img>
         </div>
       </Grid>
       <Grid item xs={12}>
