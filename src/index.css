@@ -15,3 +15,10 @@ code {
 b {
   font-weight: 700;
 }
+
+hr {
+  background-color: rgba(224, 224, 224, 1);
+  border: 0;
+  height: 2px;
+  width: 56px;
+}

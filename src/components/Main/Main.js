@@ -206,6 +206,7 @@ const Main = () => {
           erreurs de calcul.
         </Alert>
       </Grid>
+      <hr />
       <Grid item xs={12}>
         <MinimumSalary></MinimumSalary>
       </Grid>

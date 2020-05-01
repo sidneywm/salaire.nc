@@ -35,10 +35,10 @@ const MinimumSalary = () => {
       <Typography variant="h3" className={classes.title}>
         Quelle est le salaire minimum par mois en Nouvelle-Calédonie ?
       </Typography>
-      <Typography variant="body" className={classes.text}>
+      <Typography variant="body1" className={classes.text}>
         Le salaire minimun brut par mois en vigueur est de :
       </Typography>
-      <Typography variant="body" className={classes.number}>
+      <Typography variant="body1" className={classes.number}>
         156 568 FCFP
       </Typography>
     </div>
