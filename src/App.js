@@ -6,7 +6,7 @@ import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
 import Topbar from './components/Topbar/Topbar';
 import Header from './components/Header/Header';
-import Calculator from './components/Calculator/Calculator';
+import Main from './components/Main/Main';
 import Copyright from './components/Copyright/Copyright';
 
 const theme = createMuiTheme({
@@ -24,7 +24,7 @@ function App() {
         <Topbar></Topbar>
         <Container maxWidth="md">
           <Header></Header>
-          <Calculator></Calculator>
+          <Main></Main>
           <Copyright></Copyright>
         </Container>
       </ThemeProvider>

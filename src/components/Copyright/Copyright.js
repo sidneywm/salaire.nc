@@ -7,14 +7,15 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     justifyContent: 'center',
-    padding: theme.spacing(3),
+    marginTop: theme.spacing(3),
+    paddingBottom: theme.spacing(2),
   },
   text: {
     fontSize: '0.875rem',
     textAlign: 'center',
   },
 }));
-const Copyright = (props) => {
+const Copyright = () => {
   const classes = useStyles();
   return (
     <div className={classes.root}>

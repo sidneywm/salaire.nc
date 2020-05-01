@@ -14,6 +14,7 @@ import Button from '@material-ui/core/Button';
 import SalaryBrutInput from './SalaryBrutInput';
 import SalaryNetResult from './SalaryNetResult';
 import TableSummary from './TableSummary';
+import MinimumSalary from './MinimumSalary';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -51,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Calculator = () => {
+const Main = () => {
   const classes = useStyles();
 
   React.useEffect(() => {
@@ -205,8 +206,11 @@ const Calculator = () => {
           erreurs de calcul.
         </Alert>
       </Grid>
+      <Grid item xs={12}>
+        <MinimumSalary></MinimumSalary>
+      </Grid>
     </Grid>
   );
 };
 
-export default Calculator;
+export default Main;
