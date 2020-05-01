@@ -42,6 +42,7 @@ const useStyles = makeStyles((theme) => ({
   },
   inputImg: {
     marginLeft: theme.spacing(14),
+    width: '150px',
     [theme.breakpoints.down('sm')]: {
       display: 'none',
     },
