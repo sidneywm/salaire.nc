@@ -28,7 +28,7 @@ const Copyright = () => {
     <div className={classes.root}>
       <AccountBalanceIcon className={classes.icon} />
       <Typography variant="subtitle1" className={classes.text}>
-        © Copyright 2019 - 2020 - <b>Salaire.nc</b> par Sidney Wimart
+        © Copyright 2020 - <b>Salaire.nc</b> par Sidney Wimart
       </Typography>
     </div>
   );

@@ -36,8 +36,16 @@ const AverageSalary = () => {
         Salaire moyen
       </Typography>
       <Typography variant="body1" className={classes.text}>
-        Selon ISEE en 2013, un salarié à temps plein gagne un salaire mensuel
-        moyen net de :
+        Selon l'
+        <a
+          href="https://www.isee.nc/component/phocadownload/category/392-tec-2016?download=1647:tec-2016-revenus"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          ISEE
+        </a>{' '}
+        en 2013, un salarié à temps plein gagne en moyenne un salaire mensuel
+        net de :
       </Typography>
       <Typography variant="body1" className={classes.number}>
         274 000 FCFP

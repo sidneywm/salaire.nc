@@ -36,8 +36,8 @@ const MinimumSalary = () => {
         Salaire minimum
       </Typography>
       <Typography variant="body1" className={classes.text}>
-        À compter du 1er octobre 2018, le salaire minimun brut garanti par mois
-        en Nouvelle-Calédonie est de :
+        Depuis le 1er octobre 2018, le salaire minimun brut garanti par mois en
+        Nouvelle-Calédonie est de :
       </Typography>
       <Typography variant="body1" className={classes.number}>
         156 568 FCFP
