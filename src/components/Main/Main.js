@@ -14,8 +14,8 @@ import Button from '@material-ui/core/Button';
 import SalaryBrutInput from './SalaryBrutInput';
 import SalaryNetResult from './SalaryNetResult';
 import TableSummary from './TableSummary';
-import MinimumSalary from './MinimumSalary';
-import AverageSalary from './AverageSalary';
+import MinimumSalary from './Infos/MinimumSalary';
+import AverageSalary from './Infos/AverageSalary';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -56,18 +56,6 @@ const useStyles = makeStyles((theme) => ({
 const Main = () => {
   const classes = useStyles();
 
-  React.useEffect(() => {
-    const listener = (event) => {
-      if (event.code === 'Enter' || event.code === 'NumpadEnter') {
-        calculate();
-      }
-    };
-    document.addEventListener('keydown', listener);
-    return () => {
-      document.removeEventListener('keydown', listener);
-    };
-  });
-
   const [values, setValues] = React.useState({
     salaryBrut: null,
     salaryNet: 0,
@@ -80,10 +68,22 @@ const Main = () => {
     ccs: 0,
     retraiteAgircArrco: {
       tranche1: 0,
-      tranche2: 0,
+      tranche2: null,
     },
     ceg: 0,
     cet: 0,
+  });
+
+  React.useEffect(() => {
+    const listener = (event) => {
+      if (event.code === 'Enter' || event.code === 'NumpadEnter') {
+        calculate();
+      }
+    };
+    document.addEventListener('keydown', listener);
+    return () => {
+      document.removeEventListener('keydown', listener);
+    };
   });
 
   const handleChange = (event) => {

@@ -16,7 +16,7 @@ const useStyles = makeStyles({
   table: {
     width: '100%',
   },
-  row: {
+  tableBody: {
     '& > tr:last-child > .MuiTableCell-root': {
       borderBottom: 'none',
     },
@@ -73,7 +73,7 @@ const TableSummary = (props) => {
             <TableCell align="center">Montants (FCFP)</TableCell>
           </TableRow>
         </TableHead>
-        <TableBody className={classes.row}>
+        <TableBody className={classes.tableBody}>
           {rows.map((row) => (
             <TableRow key={row.nom}>
               <TableCell component="th" scope="row">
