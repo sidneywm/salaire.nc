@@ -16,6 +16,11 @@ const useStyles = makeStyles({
   table: {
     width: '100%',
   },
+  row: {
+    '& > tr:last-child > .MuiTableCell-root': {
+      borderBottom: 'none',
+    },
+  },
 });
 
 const createData = (nom, taux, montant) => {
@@ -59,7 +64,7 @@ const TableSummary = (props) => {
   ];
 
   return (
-    <TableContainer component={Paper}>
+    <TableContainer component={Paper} variant="outlined">
       <Table className={classes.table} aria-label="cotisations-salariales">
         <TableHead>
           <TableRow>
@@ -68,7 +73,7 @@ const TableSummary = (props) => {
             <TableCell align="center">Montants (FCFP)</TableCell>
           </TableRow>
         </TableHead>
-        <TableBody>
+        <TableBody className={classes.row}>
           {rows.map((row) => (
             <TableRow key={row.nom}>
               <TableCell component="th" scope="row">

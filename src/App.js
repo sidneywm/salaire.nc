@@ -3,7 +3,6 @@ import './App.css';
 
 import Container from '@material-ui/core/Container';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
-import green from '@material-ui/core/colors/green';
 
 import Topbar from './components/Topbar/Topbar';
 import Header from './components/Header/Header';
