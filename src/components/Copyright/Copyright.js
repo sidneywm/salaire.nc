@@ -3,12 +3,19 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 
+import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
+
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     justifyContent: 'center',
-    marginTop: theme.spacing(3),
+    flexDirection: 'column',
+    alignItems: 'center',
+    marginTop: theme.spacing(6),
     paddingBottom: theme.spacing(2),
+  },
+  icon: {
+    marginBottom: theme.spacing(0.5),
   },
   text: {
     fontSize: '0.875rem',
@@ -19,8 +26,9 @@ const Copyright = () => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
+      <AccountBalanceIcon className={classes.icon} />
       <Typography variant="subtitle1" className={classes.text}>
-        © Copyright 2020 - <b>Salaire.nc</b> par Sidney Wimart
+        © Copyright 2019 - 2020 - <b>Salaire.nc</b> par Sidney Wimart
       </Typography>
     </div>
   );
