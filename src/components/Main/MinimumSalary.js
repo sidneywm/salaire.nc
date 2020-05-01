@@ -13,6 +13,7 @@ const useStyles = makeStyles((theme) => ({
   title: {
     fontSize: '1.6rem',
     fontWeight: 300,
+    textAlign: 'center',
   },
   text: {
     textAlign: 'center',
