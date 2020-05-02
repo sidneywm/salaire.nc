@@ -75,7 +75,7 @@ const Main = () => {
       tranche1: 0,
       tranche2: null,
     },
-    cet: 0,
+    cet: null,
   });
 
   React.useEffect(() => {
@@ -148,7 +148,15 @@ const Main = () => {
                 )
               : null,
         },
-        cet: 0,
+        cet:
+          salaryBrut >= 409070
+            ? roundNumber(409069 * rates.cet) +
+              roundNumber(
+                (salaryBrut > 3272554
+                  ? 3272554 - 409070
+                  : salaryBrut - 409070) * rates.cet
+              )
+            : null,
       };
       setValues({
         ...values,
@@ -163,7 +171,8 @@ const Main = () => {
           output.retraiteAgircArrco.tranche1 -
           output.retraiteAgircArrco.tranche2 -
           output.ceg.tranche1 -
-          output.ceg.tranche2,
+          output.ceg.tranche2 -
+          output.cet,
       });
     }
   };

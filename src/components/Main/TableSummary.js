@@ -36,6 +36,7 @@ const TableSummary = (props) => {
     ccs,
     retraiteAgircArrco,
     ceg,
+    cet,
   } = props.values;
 
   const rows = [
@@ -73,6 +74,9 @@ const TableSummary = (props) => {
             ceg.tranche2
           ),
         ]
+      : []),
+    ...(cet
+      ? [createData("CET (Contribution d'Equilibre Technique)", rates.cet, cet)]
       : []),
   ];
 
