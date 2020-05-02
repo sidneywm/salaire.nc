@@ -76,7 +76,7 @@ const TableSummary = (props) => {
         ]
       : []),
     ...(cet
-      ? [createData("CET (Contribution d'Equilibre Technique)", rates.cet, cet)]
+      ? [createData("CET (Contribution d'équilibre technique)", rates.cet, cet)]
       : []),
   ];
 
