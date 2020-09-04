@@ -47,17 +47,17 @@ const AverageSalary = () => {
       <Typography variant="body1" className={classes.text}>
         Selon l'
         <a
-          href="https://www.isee.nc/component/phocadownload/category/392-tec-2016?download=1647:tec-2016-revenus"
+          href="https://www.isee.nc/component/phocadownload/category/271-salaires?download=1973:salaires-de-2013-a-2019-synthese-43"
           rel="noopener noreferrer"
           target="_blank"
         >
           ISEE
         </a>{' '}
-        en 2013, un salarié à temps plein gagne en moyenne un salaire mensuel
+        en 2019, un salarié à temps plein gagne en moyenne un salaire mensuel
         net de :
       </Typography>
       <Typography variant="body1" className={classes.number}>
-        274 000 FCFP
+        342 000 FCFP
       </Typography>
     </div>
   );

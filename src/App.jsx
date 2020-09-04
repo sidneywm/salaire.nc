@@ -9,16 +9,17 @@ import Main from './components/Main/Main';
 import Copyright from './components/Copyright/Copyright';
 
 const theme = createMuiTheme({
-  palette: {
-    primary: {
-      main: '#004b3c',
+    palette: {
+        primary: {
+            main: '#004b3c',
+        },
     },
-  },
 });
 
+
 function App() {
-  return (
-    <div>
+    return (
+        <div>
       <ThemeProvider theme={theme}>
         <Topbar></Topbar>
         <Container maxWidth="md">
@@ -28,7 +29,7 @@ function App() {
         </Container>
       </ThemeProvider>
     </div>
-  );
+    );
 }
 
 export default App;
