@@ -20,6 +20,9 @@ const useStyles = makeStyles((theme) => ({
         '&:focus': {
             outlineColor: '#004b3c'
          },
+         '&:active': {
+            outlineColor: '#004b3c'
+         },
          [theme.breakpoints.down('sm')]: {
             width: '30ch'
           },
