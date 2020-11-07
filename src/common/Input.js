@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
   },
   input: {
-    width: '27ch',
+    width: '13rem',
     height: '36px',
     border: 'none',
     backgroundColor: 'rgba(202, 209, 217, 0.3)',
@@ -18,11 +18,10 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '0.875rem',
     padding: '0 1rem',
     '&:focus': {
-      borderColor: '#004b3c',
       outlineColor: '#004b3c',
     },
     [theme.breakpoints.down('sm')]: {
-      width: '30ch',
+      fontSize: '1rem',
     },
   },
 
@@ -36,6 +35,9 @@ const useStyles = makeStyles((theme) => ({
     borderBottomLeftRadius: '4px',
     fontSize: '0.875rem',
     padding: '0 0.3rem 0 1rem',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '1rem',
+    },
   },
 }));
 
