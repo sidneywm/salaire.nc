@@ -31,9 +31,7 @@ const useStyles = makeStyles((theme) => ({
       1
     )}px`,
     [theme.breakpoints.down('sm')]: {
-      margin: `${theme.spacing(2)}px ${theme.spacing(3)}px 0 ${theme.spacing(
-        3
-      )}px`,
+      margin: `0 ${theme.spacing(3)}px 0 ${theme.spacing(1)}px`,
     },
   },
   inputImg: {

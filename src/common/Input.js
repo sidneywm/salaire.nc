@@ -18,7 +18,13 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '0.875rem',
     padding: '0 1rem',
     '&:focus': {
-      outlineColor: '#004b3c',
+      outline: 'none',
+      display: 'inline-block',
+      boxShadow: '0 0 0 2px #004b3c',
+      borderRadius: '4px',
+      //   outlineColor: '#004b3c',
+      //   outlineWidth: '2px',
+      //   outlineStyle: 'solid',
     },
     [theme.breakpoints.down('sm')]: {
       width: '25ch',
