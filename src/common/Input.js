@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
   },
   input: {
-    width: '13rem',
+    width: '27ch',
     height: '36px',
     border: 'none',
     backgroundColor: 'rgba(202, 209, 217, 0.3)',
@@ -21,6 +21,7 @@ const useStyles = makeStyles((theme) => ({
       outlineColor: '#004b3c',
     },
     [theme.breakpoints.down('sm')]: {
+      width: '30ch',
       fontSize: '1rem',
     },
   },
