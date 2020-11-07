@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     padding: '0 1rem',
     '&:focus': {
       outline: 'none',
-      display: 'inline-block',
+      WebkitAppearance: 'none',
       WebkitBoxShadow: '0 0 0 2px rgba(0, 75, 60, 1)',
       boxShadow: '0 0 0 2px rgba(0, 75, 60, 1)',
       borderRadius: '4px',
