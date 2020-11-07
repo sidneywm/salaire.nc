@@ -8,14 +8,13 @@ import { makeStyles } from '@material-ui/core/styles';
 import Alert from '@material-ui/lab/Alert';
 
 import Grid from '@material-ui/core/Grid';
-import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 
-import SalaryBrutInput from './SalaryBrutInput';
 import SalaryNetResult from './SalaryNetResult';
 import TableSummary from './TableSummary';
 import MinimumSalary from './Infos/MinimumSalary';
 import AverageSalary from './Infos/AverageSalary';
+import Input from '../../common/Input';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -27,21 +26,18 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     flexWrap: 'wrap',
   },
-  inputField: {
-    width: '30ch',
-  },
   inputBtn: {
     margin: `${theme.spacing(3)}px 0 ${theme.spacing(3)}px ${theme.spacing(
-      3
+      1
     )}px`,
     [theme.breakpoints.down('sm')]: {
-      margin: `${theme.spacing(3)}px ${theme.spacing(3)}px 0 ${theme.spacing(
+      margin: `${theme.spacing(2)}px ${theme.spacing(3)}px 0 ${theme.spacing(
         3
       )}px`,
     },
   },
   inputImg: {
-    marginLeft: theme.spacing(14),
+    marginLeft: theme.spacing(13),
     width: '150px',
     [theme.breakpoints.down('sm')]: {
       display: 'none',
@@ -90,10 +86,10 @@ const Main = () => {
     };
   });
 
-  const handleChange = (event) => {
+  const handleChange = ({ value }) => {
     setValues({
       ...values,
-      [event.target.name]: event.target.value,
+      salaryBrut: value,
     });
   };
 
@@ -181,18 +177,7 @@ const Main = () => {
     <Grid container spacing={4} className={classes.root}>
       <Grid item xs={12}>
         <div className={classes.inputBox}>
-          <TextField
-            label="Salaire brut mensuel* (FCFP)"
-            helperText="*Hors avantages en nature et tickets restaurant"
-            className={classes.inputField}
-            value={values.salaryBrut}
-            onChange={handleChange}
-            name="salaryBrut"
-            id="salary-input"
-            InputProps={{
-              inputComponent: SalaryBrutInput,
-            }}
-          />
+          <Input onChange={handleChange}></Input>
           <Button
             variant="contained"
             color="primary"
