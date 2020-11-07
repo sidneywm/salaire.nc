@@ -6,9 +6,10 @@ const useStyles = makeStyles((theme) => ({
   inputArea: {
     display: 'flex',
     alignItems: 'center',
+    width: '35%',
   },
   input: {
-    width: '27ch',
+    width: '100%',
     height: '36px',
     border: 'none',
     backgroundColor: 'rgba(202, 209, 217, 0.3)',
@@ -21,7 +22,6 @@ const useStyles = makeStyles((theme) => ({
       outlineColor: '#004b3c',
     },
     [theme.breakpoints.down('sm')]: {
-      width: '30ch',
       fontSize: '1rem',
     },
   },
