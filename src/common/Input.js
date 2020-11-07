@@ -20,8 +20,8 @@ const useStyles = makeStyles((theme) => ({
     '&:focus': {
       outline: 'none',
       display: 'inline-block',
-      WebkitBoxShadow: '0 0 0 2px #004b3c',
-      boxShadow: '0 0 0 2px #004b3c',
+      WebkitBoxShadow: '0 0 0 2px rgba(0, 75, 60, 1)',
+      boxShadow: '0 0 0 2px rgba(0, 75, 60, 1)',
       borderRadius: '4px',
     },
     [theme.breakpoints.down('sm')]: {
