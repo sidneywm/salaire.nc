@@ -1,18 +1,18 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import Typography from "@material-ui/core/Typography";
+import AccountBalanceIcon from "@material-ui/icons/AccountBalance";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
   title: {
-    display: 'flex',
-    alignItems: 'center',
-    fontSize: '1.5rem',
+    display: "flex",
+    alignItems: "center",
+    fontSize: "1.5rem",
     marginRight: theme.spacing(1),
   },
   titleIcon: {

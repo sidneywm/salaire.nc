@@ -1,23 +1,23 @@
-import React from 'react';
+import React from "react";
 
-import { makeStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
+import { makeStyles } from "@material-ui/core/styles";
+import Typography from "@material-ui/core/Typography";
 
-import { formatNumbers } from '../../common/utils';
+import { formatNumbers } from "../../common/utils";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
   },
   text: {
-    fontSize: '1.5rem',
+    fontSize: "1.5rem",
     fontWeight: 700,
     marginRight: theme.spacing(1),
   },
   number: {
-    fontSize: '1.5rem',
+    fontSize: "1.5rem",
   },
 }));
 
