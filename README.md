@@ -7,6 +7,8 @@
   <img src="./assets/screenshot.png" width="580" style="border-radius:4px;">
 </p>
 
+Full link to the website : [https://salaire.nc](https://salaire.nc).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
