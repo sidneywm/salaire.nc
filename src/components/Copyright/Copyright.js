@@ -44,7 +44,7 @@ const Copyright = () => {
       <AccountBalanceIcon className={classes.icon} />
       <Typography variant="subtitle1" className={classes.text}>
         Fait avec <b className={classes.heart}>♥</b> à Nouméa
-        <br />© Tous droit réservés 2021 - <b>Salaire.nc</b>
+        <br />© Tous droit réservés 2022 - <b>Salaire.nc</b>
       </Typography>
 	  <a className={classes.github} href="https://github.com/sidneywm/salaire.nc" target="_blank" rel="noopener noreferrer">
 		  <img className={classes.githubImg} src="/images/github.png" alt="Github" />
