@@ -7,7 +7,7 @@ export const rates = {
   },
   retraite: formatRate(4.2),
   chomage: formatRate(0.34),
-  ccs: formatRate(1.30),
+  ccs: formatRate(2),
   retraiteAgircArrco: {
     tranche1: formatRate(3.15),
     tranche2: formatRate(8.64),
